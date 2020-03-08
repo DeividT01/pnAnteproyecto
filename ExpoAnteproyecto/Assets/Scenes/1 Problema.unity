@@ -322,11 +322,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kid
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e788784817d35694797b022d0f47a6e1, type: 2}
     - target: {fileID: -4216859302048453862, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -397,6 +392,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e788784817d35694797b022d0f47a6e1, type: 2}
     - target: {fileID: -2731905613595212099, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -554,11 +554,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kid (1)
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 6f490d332aa92a84aae29f29c689faf1, type: 2}
     - target: {fileID: -4216859302048453862, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -629,6 +624,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6f490d332aa92a84aae29f29c689faf1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d1b905da94af7c4ea131ddf7f7c2a1b, type: 3}
 --- !u!1 &356298494
@@ -1193,7 +1193,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3476326, g: 0.7924528, b: 0.40481573, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1534,6 +1534,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 830b57e05e330cc43930108497e7a0c5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f538cfc0fc9b6d8449a923107dfe5b4e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 830b57e05e330cc43930108497e7a0c5, type: 3}
 --- !u!1 &1144335990
