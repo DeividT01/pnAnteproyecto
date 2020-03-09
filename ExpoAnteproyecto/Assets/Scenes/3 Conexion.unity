@@ -432,11 +432,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Granny
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 713060071bb3ced49ae58b13bc7ecdb3,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 2bb8bc452aa676a4c9e09ef5a0c31a72, type: 2}
     - target: {fileID: -4216859302048453862, guid: 713060071bb3ced49ae58b13bc7ecdb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -507,6 +502,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 713060071bb3ced49ae58b13bc7ecdb3,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2bb8bc452aa676a4c9e09ef5a0c31a72, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 713060071bb3ced49ae58b13bc7ecdb3, type: 3}
 --- !u!4 &321183279 stripped
@@ -836,7 +836,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1, y: 1, z: 1, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1298,7 +1298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.11998611, y: 0.87866795, z: -0.29979774, w: -0.3516637}
-  m_LocalPosition: {x: 14.381942, y: 14.448288, z: 14.647418}
+  m_LocalPosition: {x: 13.8, y: 10.46, z: 13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

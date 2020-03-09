@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 452.2, y: 64.9}
-  m_SizeDelta: {x: 132.9, y: 119.4}
+  m_AnchoredPosition: {x: 254, y: 12}
+  m_SizeDelta: {x: 48.8, y: 49.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126107630
 MonoBehaviour:
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -420,6 +420,7 @@ MonoBehaviour:
   speed: 0
   arrow: {fileID: 472943079}
   phone: {fileID: 2107113201}
+  conextions: {fileID: 0}
 --- !u!4 &261604542
 Transform:
   m_ObjectHideFlags: 0
@@ -468,8 +469,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: 261}
-  m_SizeDelta: {x: 419.7, y: 522.9}
+  m_AnchoredPosition: {x: -24, y: 136}
+  m_SizeDelta: {x: 261.3, y: 253.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472943081
 MonoBehaviour:
@@ -586,11 +587,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Granny
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 713060071bb3ced49ae58b13bc7ecdb3,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 85ec1f6dcc4e89643b93736e5e0a25fc, type: 2}
     - target: {fileID: -4216859302048453862, guid: 713060071bb3ced49ae58b13bc7ecdb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -661,6 +657,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 713060071bb3ced49ae58b13bc7ecdb3,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 85ec1f6dcc4e89643b93736e5e0a25fc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 713060071bb3ced49ae58b13bc7ecdb3, type: 3}
 --- !u!4 &1053198551 stripped
@@ -703,8 +704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 455, y: 87}
-  m_SizeDelta: {x: 419.7, y: 522.9}
+  m_AnchoredPosition: {x: 255.09998, y: 21.199995}
+  m_SizeDelta: {x: 154, y: 217.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1298266671
 MonoBehaviour:

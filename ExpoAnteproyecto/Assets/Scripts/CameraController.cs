@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CameraController : MonoBehaviour
 {
     #region 1 Problema
+    public GameObject slide0;
     public Transform[] pivotes;
     public GameObject people;
     public int elementoActual;
@@ -20,6 +21,8 @@ public class CameraController : MonoBehaviour
     #region 3 Conexion
     public GameObject conextions;
     #endregion
+    
+   
     private void Awake()
     {
         #region 1 Problema
@@ -29,6 +32,7 @@ public class CameraController : MonoBehaviour
     }
     void Start()
     {
+        elementoActual = 0;
         #region 2 Solution
         if(arrow!=null)
             arrow.SetActive(false);
@@ -47,27 +51,49 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name.Equals("1 Problema"))
+        if (SceneManager.GetActiveScene().name.Equals("1 Problema") || SceneManager.GetActiveScene().name.Equals("4 Canvas"))
         {
+          
             transform.position = Vector3.Lerp(transform.position, pivotes[elementoActual].position, speed * Time.deltaTime);
             transform.rotation = Quaternion.Lerp(transform.rotation, pivotes[elementoActual].rotation, speed * Time.deltaTime * 0.9f);
 
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-
+                if (slide0 != null)
+                {
+                    if (slide0.activeInHierarchy)
+                    {
+                        slide0.SetActive(false);
+                        return;
+                    }
+                }
                 if (elementoActual == 1)
                 {
-                    // Next Scene
-                    SceneManager.LoadScene("2 Solucion");
+                    if (SceneManager.GetActiveScene().name.Equals("1 Problema"))
+                        SceneManager.LoadScene("2 Solucion");
                 }
-                if (people.activeInHierarchy)
-                    people.SetActive(false);
-                else
-                    people.SetActive(true);
+                if (people != null)
+                {
+                    if (people.activeInHierarchy)
+                        people.SetActive(false);
+                    else
+                        people.SetActive(true);
+                }
                 elementoActual = (elementoActual + 1) % pivotes.Length;
             }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (SceneManager.GetActiveScene().name.Equals("4 Canvas"))
+                {
+                    elementoActual = elementoActual - 1;
+                    if (elementoActual < 0)
+                    {
+                        elementoActual = pivotes.Length - 1;
+                    }
+                }
+            }
 
-          
+
         }
 
         else if (SceneManager.GetActiveScene().name.Equals("2 Solucion"))
@@ -112,11 +138,12 @@ public class CameraController : MonoBehaviour
                 {
                     conextions.SetActive(true);
                 }
-                else {
+                else
+                {
                     SceneManager.LoadScene("4 Canvas");
                 }
             }
-            
+
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (conextions.activeInHierarchy)
@@ -134,7 +161,7 @@ public class CameraController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit(0);
+            Application.Quit();
         }
 
 
